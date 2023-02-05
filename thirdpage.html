@@ -1,0 +1,338 @@
+<script defer src="https://use.fontawesome.com/releases/v5.2.0/js/all.js" integrity="sha384-4oV5EgaV02iISL2ban6c/RmotsABqE4yZxZLcYMAdG7FAPsyHYAPpywE9PJo+Khy" crossorigin="anonymous"></script>
+
+
+<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+
+<div class="wrapper">
+  <!-- Navigation -->
+  <nav class="main-nav">
+    <marquee><b>Meditation is choosing not to engage in the drama of the mind but elevating the mind to its highest potential.</b></marquee>
+    <ul>
+      <li><a href="firstpage.html">Home</a></li>
+      <li><a href="#">Sessions</a></li>
+      <li><a href="contactpage.html">Contact</a></li>
+      <li><a href="#">Blogs</a></li>
+    </ul>
+  </nav>
+  
+    <!-- Top container -->
+  <section class="top-container">
+    <header class="showcase">
+      <h1><b>The act of meditation is being spacious.</b></h1>
+      <p> Life is short. We can live it lost in thought or we can choose to be present as life unfolds around us.</p>
+      <style>
+        /* CSS VARIABLES */
+        .wrapper .main-nav b{
+            font-size: large;
+            color: rgb(1, 1, 1);
+            font-family:'Times New Roman', Times, serif ;
+        }
+:root {
+  --primary: #ddd;
+  --dark: #333;
+  --light: #fff;
+  --shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+}
+
+html {
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+  color: var(--dark);
+}
+
+body {
+  background: rgb(76, 131, 213);
+  margin: 30px 50px;
+  line-height: 1.5;
+}
+
+.btn {
+  background: var(--dark);
+  color: var(--light);
+  padding: 0.6rem 1.3rem;
+  text-decoration: none;
+  border: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+.wrapper {
+  display: grid;
+  grid-gap: 20px;
+}
+
+/* Navigation */
+.main-nav ul {
+  display: grid;
+  grid-gap: 20px;
+  padding: 0;
+  list-style: none;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.main-nav a {
+  background: var(--primary);
+  display: block;
+  text-decoration: none;
+  color: var(--dark);
+  padding: 0.8rem;
+  font-size: 1.1rem;
+  text-align: center;
+  text-transform: uppercase;
+  box-shadow: var(--shadow);
+}
+
+.main-nav a:hover {
+  background: var(--dark);
+  color: var(--light);
+}
+
+/* Top Container */
+.top-container {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-areas:
+    "showcase showcase top-box-a"
+    "showcase showcase top-box-b";
+}
+
+.showcase {
+  grid-area: showcase;
+  min-height: 650px;
+  background: url("https://t4.ftcdn.net/jpg/01/52/31/49/360_F_152314964_QYikCCGoxY532xt86KsjzRgNH3Njx5KD.jpg");
+  background-size: cover;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  box-shadow: var(--shadow);
+}
+
+.showcase h1 {
+  font-size: 4.5rem;
+  margin-bottom: 0;
+  color: var(--light);
+}
+
+.showcase p {
+  font-size: 1.5rem;
+  margin-top: 0;
+  color: var(--light);
+}
+
+/* Top boxes */
+.top-box {
+  background: var(--primary);
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  padding: 1.5rem;
+  box-shadow: var(--shadow);
+}
+
+.top-box .price {
+  font-size: 2rem;
+}
+
+.top-box-a {
+  grid-area: top-box-a;
+}
+
+.top-box-b {
+  grid-area: top-box-b;
+}
+
+.boxes {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.box {
+  background: var(--primary);
+  padding: 1.5rem;
+  text-align: center;
+  box-shadow: var(--shadow);
+}
+.box b{
+    font-size: 50px;
+}
+.box p{
+    font-size: 30px;
+}
+/* Info */
+.info {
+  background: var(--primary);
+  box-shadow: var(--shadow);
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 3rem;
+}
+
+/* Portfolio */
+.portfolio {
+  display: grid;
+  grid-gap: 12px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.portfolio img {
+  width: 90%;
+  box-shadow: var(--shadow);
+}
+
+/* Footer */
+footer {
+  margin-top: 2rem;
+  background: var(--dark);
+  color: var(--light);
+  text-align: center;
+  padding: 1rem;
+}
+
+/* Media queries */
+@media (max-width: 700px) {
+  .top-container {
+    grid-template-areas: 
+      "showcase showcase"
+      "top-box-a top-box-b";
+  }
+
+ .box .btn-default {
+    color:#333;
+    background-color: rgb(24, 159, 40);
+    border:1px solid #333333;
+    font-family: cursive;
+    font-weight: 600;
+    font-size: 12px;
+    letter-spacing: 1.3px;
+    padding: 10px 20px;
+    text-decoration: none;
+    text-transform: uppercase;  
+    display: inline-block;
+    margin-bottom: 20px; 
+    padding-right:50px;
+    padding-left:50px;
+  }
+  
+  .showcase h1 {
+    font-size: 2.5rem;
+  }
+  
+  .showcase p {
+    font-size: 0.9rem;
+  }
+  
+  .top-box {
+    padding: 1.2rem;
+  }
+  
+  .top-box .price {
+    font-size: 1.5rem;
+  }
+  
+  .main-nav ul {
+    grid-template-columns: 1fr;
+  }
+  
+  .info {
+    grid-template-columns: 1fr;
+  }
+  
+  .info .btn {
+    display: block;
+    text-align: center;
+  }
+}
+@media (max-width: 500px) {
+  .top-container {
+    grid-template-areas: 
+      "showcase"
+      "top-box-a"
+      "top-box-b";
+  }
+}
+ .top-box-a .see {
+    font-size: 2.2rem;
+}
+.top-box-b .seee {
+    font-size: 2.2rem;
+}
+
+
+
+
+@media (max-width: 375px) {
+  body {
+    margin: 5px 15px;
+  }
+}
+      </style>
+    </header>
+    <div class="top-box top-box-a">
+      <h4 class ="see">Online Classes</h4>
+      <p class="price">Rs.800/month</p>
+      <a class="btn" href="#">Buy Now</a>
+    </div>
+    <div class="top-box top-box-b">
+      <h4 class="seee">Personal Tutor</h4>
+      <p class="price">Rs.2500/month</p>
+      <a class="btn" href="#">Buy Now</a>
+    </div>
+  </section>
+    
+  <!-- Boxes section -->
+  <section class="boxes">
+    <!-- <div class="box">
+      <i class="fas fa-globe fa-4x"></i>
+      <h3>Marketing</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, officia.</p>
+    </div> -->
+    <div class="box">
+      <img src="https://img.freepik.com/premium-vector/woman-sitting-meditation-black-white-line-art_125371-395.jpg"  width="20%" height="35%"/>
+      <h3><b>Guide</b></h3>
+      <p> Depth of meditation</p>
+      <a href="seventhpage.html" class="btn-default"><b>Explore</b></a>
+    </div>
+    <div class="box">
+      <img src="https://static.vecteezy.com/system/resources/previews/003/757/772/original/black-and-white-light-bulb-icon-back-to-school-educational-clipart-cute-outline-illustration-education-clever-mind-or-business-idea-linear-art-concept-vector.jpg"  width="30%" height="30%">
+      <h3><b>Tips and Tricks</b></h3>
+      <p>Lets say hello to Peaceful mind</p>
+      <a href="eigthpage.html" class="btn-default"><b>Explore</b></a>
+    </div>
+  </section>
+  <!-- <section class="info">
+    <img src="https://images.pexels.com/photos/948887/pexels-photo-948887.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="">
+    <div>
+      <h2>Your business on the web</h2>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi, delectus? Ipsam cum error dolorem adipisci itaque, ea ab dicta odio! Deleniti voluptatum, in temporibus nam et incidunt provident sed iure.</p>
+      <a class="btn" href="#">Learn More</a>
+    </div>
+  </section> -->
+  
+  <!-- Portfolio -->
+  <section class="portfolio">
+    <img src="https://thumbs.dreamstime.com/b/online-yoga-class-peaceful-young-guy-doing-morning-meditation-practice-front-laptop-home-personal-instructor-teaching-194304738.jpg" alt="" width="145%" height="105%">
+    <img src="https://media.istockphoto.com/id/1340809502/photo/fit-senior-woman-taking-online-yoga-and-meditation-class-at-home.jpg?s=612x612&w=0&k=20&c=5NI0DosK9GLyod-Ayu6Cf_YwESik8kliy9-tnbo5ZFQ=" alt=""width="145%" height="105%">
+    <img src="https://images.squarespace-cdn.com/content/v1/58a3c72be3df28d9fb005457/1502494327526-HRY3H97RPUZUSFXGEQ45/T51A5904.jpg?format=2500w" alt=""width="125%" height="105%">
+    <img src="https://adwaityoga.com/wp-content/uploads/2020/09/Meditation-Classes-in-Delhi-India.jpeg" alt="" width="125%" height="105%">
+    <img src="https://img-s-msn-com.akamaized.net/tenant/amp/entityid/AA16clyt.img?h=0&w=600&m=6&q=60&u=t&o=f&l=f&x=559&y=279" alt=""width="125%" height="105%">
+    <img src="https://im.indiatimes.in/media/content/2013/Jan/meditation_relieves_chronic_inflammation_1358451543_540x540.jpg" alt=""width="125%" height="105%">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7yLBM5oBALFw4AFcFry2YIEu5_7dpFzqMOH0-ggYIHU329VRsbajRC-Y1a8VRe0PNTiQ&usqp=CAU"width="125%" height="105%">
+    <img src="https://www.artofliving.org/sites/www.artofliving.org/files/styles/original_image/public/unity2/blog_image/Thmbnail---Benefits-of-meditation.jpg?itok=ZKoODxmM" alt="" width="125%" height="105%">
+    <img src="https://images.news18.com/ibnlive/uploads/2022/09/yoga-2.jpg" alt="" width="125%" height="105%">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR91mF6vZMin8JTjdMbQLiYrK2crcbejmjOLevhRNN6sBDToDuvCFbOxXD4AcN86v-OxIY&usqp=CAU" alt="" width="125%" height="105%">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAeiBkMkaCWoyCpbaUljzANn6IVgJD_GWecw&usqp=CAU" alt=""width="125%" height="105%"> 
+    <img src= "https://kajabi-storefronts-production.kajabi-cdn.com/kajabi-storefronts-production/sites/153325/images/rXHNYrWTLqac8CJn2Hia_file.jpg" width="125%" height="105%">
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p><b>Free free to reach us.</b></p>
+  </footer>
+</div>
+<!-- Wrapper End -->
