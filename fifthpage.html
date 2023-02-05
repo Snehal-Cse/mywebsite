@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    body{
+        background: rgb(243, 224, 138);
+        padding: 0px;
+        margin: 0px;
+    }
+    .header {
+    background-color:lightgrey;
+  }
+  .nav {
+    margin-top: -5px;
+    margin-left:1275px;
+    /* float:right; */
+    padding: 18px 0;
+    width:500px;
+  }
+  .nav li {
+    display:inline;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+    text-transform:uppercase;
+    margin-left:10px;
+    margin-right:10px;
+  }
+  .wrapper {
+	width: 100%;
+	overflow: hidden;
+}
+.photobanner {
+	position: relative;
+	height: 233px;
+	margin-bottom: 30px;
+	display: flex;
+	width: 100%;
+}
+
+.photobanner img {
+  margin: 0px 25px;
+  box-shadow: 2px 2px 8px #8a8a8a;
+}
+
+.photobanner {
+  animation: bannermove 18s linear infinite alternate-reverse;
+}
+
+@keyframes bannermove {
+  from {
+    left: 0px;
+  }
+  to {
+    left: -2700px;
+  }
+}
+/* Global Styling javascript needed*/        
+* {
+    box-sizing: border-box;
+    /* CSS Transition */
+    -webkit-transition: background .1s ease-in-out, border .1s ease-in-out;
+    -moz-transition: background .1s ease-in-out, border .1s ease-in-out;
+    -ms-transition: background .1s ease-in-out, border .1s ease-in-out;
+    -o-transition: background .1s ease-in-out, border .1s ease-in-out;
+    transition: background .1s ease-in-out, border .1s ease-in-out;
+}
+
+.clearfix::after {
+    content: “”;
+    clear: both;
+    display: table;
+}
+
+h1 {
+    padding: 25px 0 25px 0;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+}
+
+a {
+    font-family: 'Open Sans', sans-serif;
+    text-decoration: none;
+}
+
+/* The Wrapper and container*/        
+.itemWrapper {
+    width: 100%;
+    margin: 10px;
+}
+.itemContainer {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.item {
+    width: 25%;
+    margin-bottom: 15px;
+    padding: 0 10px;
+    float: left;
+
+}
+
+@media only screen and (max-width: 1100px) {
+    .itemContainer {
+        max-width: 550px;
+        margin: 0 auto;
+    }
+
+    .item {
+        width: 50%;
+        margin-bottom: 15px;
+        padding: 0 10px;
+        float: left;
+
+    }
+}
+
+@media only screen and (max-width: 550px) { 
+    .itemContainer {
+        max-width: 500px;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .item {
+        width: 70%;
+        padding: 0 10px;
+        float: none;
+        margin: 0 auto;
+        margin-bottom: 15px;
+    }
+}
+
+/* Here is the item box css */        
+.itemContent { 
+    width: 100%; 
+    border-radius: 3px; border: 3px solid  #cccccc; 
+    height: 315px;
+    position: relative; 
+
+}
+/* item or image container */
+.itemContentItem { text-align: center; padding: 15px; }
+.itemContentItem img {max-width: 300px; height: 125px;}
+
+
+.overDiv {
+    z-index: 10;
+    position: absolute;
+    bottom: 0;
+}
+
+/* item description */
+.itemContentTitle { 
+    position: relative;
+    width: 100%;
+    background-color:  rgba(205, 201, 201, 0.353);
+    text-align: center;
+    padding: 10px 15px;
+    color:rgb(123, 32, 32);
+    height: 100px;
+    
+
+
+}
+
+    .itemContentTitleHover {
+        color: #fff !important;
+        background-color: rgba(247, 128, 49, 0.9) !important;
+
+    }
+
+    .itemContentTitle::before { 
+        content:"\f02e";
+        font-family: FontAwesome;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 13px;
+        text-decoration: inherit;
+        border-radius: 50%;
+        padding: 10px;
+        width: 15px; 
+        height: 15px;
+        border: 4px solid #fff;
+        background-color: #7b370a;
+        color: #fff;
+        display: inline-block;
+        text-align: center;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: -20px;
+        margin: auto;
+    }
+    .itemContentTitle h2 {
+        font-size: 1em;
+        font-family: 'Open Sans', sans-serif;
+    }
+
+
+.itemContentInfo { 
+    position: relative;
+    background-color:  rgba(242, 242, 242, 0.9);
+    text-align: justify;
+    color: #404040;
+    overflow: hidden;
+    height: 0px;
+}
+
+    .itemContentInfo p { 
+        font-size: 0.9em;
+        line-height: 1.6em;
+        margin-bottom: 1.5em;
+        color: #797979;
+        padding: 10px 15px;
+    }
+
+.itemContentDownload {
+    background-color: grey;
+    text-align: center;
+    padding: 10px 15px;
+    height: 66px;
+}
+
+    .itemBtn {
+       padding: 10px 30px;
+        display: inline-block;
+        border: 2px solid #d9d9d9;
+        border-radius: 5px;
+        background-color: #fff;
+        color: #f78031;
+    }
+
+    .itemBtn:hover {
+         color: #fff;
+        background-color: #f78031;
+        text-decoration: none;
+    }
+    .boxed {
+  border: 3px solid rgb(8, 8, 8) ;
+  padding: 20px;
+  text-align: center;
+  font-size: large;
+  font-weight: 400;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+
+
+
+
+
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="container">
+          <ul class="nav">
+            <li><a href ="aboutus.html">About</a></li>
+            <li><a href ="contactpage.html">Contact</a></li>
+                      <li><a href="second page .html"> Main </a></li>
+            <!-- <li>Team</li> -->
+           
+          </ul>
+        </div>
+      </div>
+      <div class="wrapper">
+        <div class="photobanner">
+      <img class="first" src="https://blog-images-1.pharmeasy.in/2020/08/06164829/suryanamaskar-.jpg" alt="" />
+      <img src="https://us.123rf.com/450wm/dimol/dimol1611/dimol161100078/dimol161100078.jpg?ver=6 " alt="" />
+      <img src="http://www.litsouls.com/wp-content/uploads/2020/05/12-surya-namaskar-steps-min.jpg " alt="" />
+      <img src="https://stylesatlife.com/wp-content/uploads/2021/06/Yoga-Asanas-That-Every-Beginner-Should-Know.jpg " alt="" />
+      <img src="https://www.india.com/wp-content/uploads/2021/01/yoga-main.jpg " alt="" />
+      <img src=" https://thumbs.dreamstime.com/b/young-beautiful-slim-woman-silhouette-practices-yoga-beac-beach-sunrise-sunset-43123759.jpg" alt="" />
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_hOZQOPRTd6ot7uNDqVJarejXuPTtN6emM9fZSi_yRnIbKZg6K_NMhvAcfPZK5Yjf1IM&usqp=CAU " alt="" />
+      <img src=" http://www.goalcast.com/wp-content/uploads/2017/05/yoga-2.jpg" alt="" />
+     
+    </div>
+    </div>
+
+    <!-- boxes -->
+    <div class="boxed">
+       <b> Yoga is like music. The rhythm of the body,melody of the mind And harmony of the soul</b>
+      </div>
+    <div class="itemWrapper">
+        <div class="itemContainer">
+            <!-- item 1 -->
+            <div class="item clearfix">
+              <div class="itemContent">
+                  <div class="itemContentItem">
+                      <img src="https://images.everydayhealth.com/images/healthy-living/fitness/yoga-poses-for-beginners-04-722x406.jpg?w=768" title="Ebook" alt="Ebook" />
+                  </div>
+                  <div class="overDiv">
+                      <div class="itemContentTitle">
+                          <h2> Vriksasana (Tree Pose) <br> To Improve Your Balance</h2>
+                      </div>
+                      <div class="itemContentInfo">
+                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                      </div>
+                      <div class="itemContentDownload">
+                          <a class="itemBtn" href="https://www.yogajournal.com/poses/tree-pose-2/">View More!</a>
+                      </div>
+                  </div>
+              </div>
+            </div>  
+            <!-- item 2 -->
+            <div class="item clearfix">
+              <div class="itemContent">
+                  <div class="itemContentItem">
+                      <img src="https://images.everydayhealth.com/images/healthy-living/fitness/yoga-poses-for-beginners-05-722x406.jpg?w=768" title="Ebook" alt="Ebook"/>
+                  </div>
+                  <div class="overDiv">
+                      <div class="itemContentTitle">
+                          <h2>Adho Mukha Svanasana<br>To Enhance Flexibility</h2>
+                      </div>
+                      <div class="itemContentInfo">
+                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                      </div>
+                      <div class="itemContentDownload">
+                          <a class="itemBtn" href="https://www.artofliving.org/in-en/yoga/yoga-poses/downward-facing-dog-pose-adho-mukha-svanasana">View More!</a>
+                      </div>
+                  </div>
+              </div>
+            </div>  
+            <!-- item 3 -->
+            <div class="item clearfix">
+              <div class="itemContent">
+                  <div class="itemContentItem">
+                      <img src="https://images.everydayhealth.com/images/healthy-living/fitness/yoga-poses-for-beginners-06-722x406.jpg?w=768" title="Ebook" alt="Ebook"/>
+                  </div>
+                  <div class="overDiv">
+                      <div class="itemContentTitle">
+                          <h2>Child's Pose(Balasana)<br>To Help You Relax and Unwind</h2>
+                      </div>
+                      <div class="itemContentInfo">
+                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                      </div>
+                      <div class="itemContentDownload">
+                          <a class="itemBtn" href="https://www.yogajournal.com/poses/child-s-pose/">View More!</a>
+                      </div>
+                  </div>
+              </div>
+            </div>  
+            <!-- item 5 -->
+            <div class="item clearfix">
+                <div class="itemContent">
+                    <div class="itemContentItem">
+                        <img src="https://ecdn.thelistacademy.com/wp-content/uploads/2021/01/YouTube-Channel-Art-2560x1440-px-16.jpeg" title="Ebook" alt="Ebook"/>
+                    </div>
+                    <div class="overDiv">
+                        <div class="itemContentTitle">
+                            <h2>Dhanurasana<br>To adjust hunched back and body posture</h2>
+                        </div>
+                        <div class="itemContentInfo">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        </div>
+                        <div class="itemContentDownload">
+                            <a class="itemBtn" href="https://www.artofliving.org/in-en/yoga/yoga-poses/bow-pose-dhanurasana">View More!</a>
+                        </div>
+                    </div>
+                </div>
+              </div>
+              <!-- item 6 -->
+              <div class="item clearfix">
+                <div class="itemContent">
+                    <div class="itemContentItem">
+                        <img src="https://ecdn.thelistacademy.com/wp-content/uploads/2021/01/YouTube-Channel-Art-2560x1440-px-2.jpeg" title="Ebook" alt="Ebook"/>
+                    </div>
+                    <div class="overDiv">
+                        <div class="itemContentTitle">
+                            <h2>Bhujangasana(Cobra Pose) <br>To improves spinal posture and flexibility</h2>
+                        </div>
+                        <div class="itemContentInfo">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        </div>
+                        <div class="itemContentDownload">
+                            <a class="itemBtn" href="https://www.artofliving.org/in-en/yoga/yoga-poses/cobra-pose-bhujangasana">View More!</a>
+                        </div>
+                    </div>
+                </div>
+              </div>
+              <!-- item 7 -->
+              <div class="item clearfix">
+                <div class="itemContent">
+                    <div class="itemContentItem">
+                        <img src="https://ecdn.thelistacademy.com/wp-content/uploads/2021/02/sirsasana6019d15ddd3d8.jpg" title="Ebook" alt="Ebook"/>
+                    </div>
+                    <div class="overDiv">
+                        <div class="itemContentTitle">
+                            <h2>Shirshasana<br>To improves Blood Flow and Digestion</h2>
+                        </div>
+                        <div class="itemContentInfo">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        </div>
+                        <div class="itemContentDownload">
+                            <a class="itemBtn" href="https://www.artofliving.org/in-en/yoga/yoga-poses/head-stand-sirsasana">View More!</a>
+                        </div>
+                    </div>
+                </div>
+              </div>
+              <!-- item 8 -->
+              <div class="item clearfix">
+                <div class="itemContent">
+                    <div class="itemContentItem">
+                        <img src="https://ecdn.thelistacademy.com/wp-content/uploads/2021/02/Natarajasana-the-King-of-the-dance-yoga-pose-close-up-61121-pixahive-683x1024-1.jpg" title="Ebook" alt="Ebook"/>
+                    </div>
+                    <div class="overDiv">
+                        <div class="itemContentTitle">
+                            <h2>Natarajasana<br>TO Tone the lower back and the Thighs</h2>
+                        </div>
+                        <div class="itemContentInfo">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        </div>
+                        <div class="itemContentDownload">
+                            <a class="itemBtn" href="https://en.wikipedia.org/wiki/Natarajasana">View More!</a>
+                        </div>
+                    </div>
+                </div>
+              </div>
+              <!-- item 9 -->
+              <div class="item clearfix">
+                <div class="itemContent">
+                    <div class="itemContentItem">
+                        <img src="https://ecdn.thelistacademy.com/wp-content/uploads/2021/01/YouTube-Channel-Art-2560x1440-px-18.jpeg" title="Ebook" alt="Ebook"/>
+                    </div>
+                    <div class="overDiv">
+                        <div class="itemContentTitle">
+                            <h2>Halasana<br>To stretch your spine and burns burning fat</h2>
+                        </div>
+                        <div class="itemContentInfo">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        </div>
+                        <div class="itemContentDownload">
+                            <a class="itemBtn" href="https://www.artofliving.org/in-en/yoga/yoga-poses/plough-pose">View More!</a>
+                        </div>
+                    </div>
+                </div>
+              </div>
+              <!-- item 10 -->
+              <div class="item clearfix">
+                <div class="itemContent">
+                    <div class="itemContentItem">
+                        <img src="https://ecdn.thelistacademy.com/wp-content/uploads/2021/02/Virabhadrasana-I-Warrior-Yoga-Pose-62519-pixahive-1024x683-1.jpg" title="Ebook" alt="Ebook"/>
+                    </div>
+                    <div class="overDiv">
+                        <div class="itemContentTitle">
+                            <h2>Virabhadrasana<br>To Improve focus, balance and stability</h2>
+                        </div>
+                        <div class="itemContentInfo">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        </div>
+                        <div class="itemContentDownload">
+                            <a class="itemBtn" href="https://www.artofliving.org/yoga/yoga-poses/warrior-pose-virbhadrasana">View More!</a>
+                        </div>
+                    </div>
+                </div>
+              </div>
+            <!-- item 11 -->
+            <div class="item clearfix">
+                <div class="itemContent">
+                    <div class="itemContentItem">
+                        <img src="https://ecdn.thelistacademy.com/wp-content/uploads/2021/02/Wheel-Pose-Chakrasana-291395-pixahive-1024x683-1.jpg" title="Ebook" alt="Ebook"/>
+                    </div>
+                    <div class="overDiv">
+                        <div class="itemContentTitle">
+                            <h2>Chakrasanaz<br>To Improve spinal flexibility</h2>
+                        </div>
+                        <div class="itemContentInfo">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        </div>
+                        <div class="itemContentDownload">
+                            <a class="itemBtn" href="https://www.artofliving.org/in-en/chakrasana-wheel-pose-or-urdhva-dhanurasana">View More!</a>
+                        </div>
+                    </div>
+                </div>
+              </div>
+              <!-- item 12 -->
+              <div class="item clearfix">
+                <div class="itemContent">
+                    <div class="itemContentItem">
+                        <img src="https://ecdn.thelistacademy.com/wp-content/uploads/2021/02/Shoulder-Stand-Sarvangasana-291203-pixahive-681x1024-1.jpg" title="Ebook" alt="Ebook"/>
+                    </div>
+                    <div class="overDiv">
+                        <div class="itemContentTitle">
+                            <h2>Sarvangasana<br>To Improve blood circulation </h2>
+                        </div>
+                        <div class="itemContentInfo">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        </div>
+                        <div class="itemContentDownload">
+                            <a class="itemBtn" href="https://theyogainstitute.org/how-to-do-sarvangasana/">View More!</a>
+                        </div>
+                    </div>
+                </div>
+              </div>
+              <!-- item 13 -->
+              <div class="item clearfix">
+                <div class="itemContent">
+                    <div class="itemContentItem">
+                        <img src="https://ecdn.thelistacademy.com/wp-content/uploads/2021/01/bhairavasa6017050574112.jpg" title="Ebook" alt="Ebook"/>
+                    </div>
+                    <div class="overDiv">
+                        <div class="itemContentTitle">
+                            <h2>Bhairavasana<br>To Improve digestion and strengthen the leg muscles</h2>
+                        </div>
+                        <div class="itemContentInfo">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        </div>
+                        <div class="itemContentDownload">
+                            <a class="itemBtn" href="https://en.wikipedia.org/wiki/Bhairavasana">View More!</a>
+                        </div>
+                    </div>
+                </div>
+              </div>
+                <!-- item 14 -->
+                <div class="item clearfix">
+                    <div class="itemContent">
+                        <div class="itemContentItem">
+                            <img src="https://ecdn.thelistacademy.com/wp-content/uploads/2021/02/Facebook-Event-Cover-1920x1080-px-4.jpeg" title="Ebook" alt="Ebook"/>
+                        </div>
+                        <div class="overDiv">
+                            <div class="itemContentTitle">
+                                <h2>Setu Bandha Sarvangasana<br>It helps alleviate stress and mild depression</h2>
+                            </div>
+                            <div class="itemContentInfo">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            </div>
+                            <div class="itemContentDownload">
+                                <a class="itemBtn" href="https://www.yogajournal.com/poses/bridge-pose/">View More!</a>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                  <!-- item 15 -->
+                  <div class="item clearfix">
+                    <div class="itemContent">
+                        <div class="itemContentItem">
+                            <img src="https://ecdn.thelistacademy.com/wp-content/uploads/2021/02/Yoga-practice-in-park-25281-pixahive-683x1024-1.jpg" title="Ebook" alt="Ebook"/>
+                        </div>
+                        <div class="overDiv">
+                            <div class="itemContentTitle">
+                                <h2>Vrikshasana<br>It provides a deep stretch for the quadriceps</h2>
+                            </div>
+                            <div class="itemContentInfo">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            </div>
+                            <div class="itemContentDownload">
+                                <a class="itemBtn" href="https://www.artofliving.org/in-en/yoga/yoga-poses/tree-pose-vrikshasana">View More!</a>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                  <!-- item 16 -->
+                  <div class="item clearfix">
+                    <div class="itemContent">
+                        <div class="itemContentItem">
+                            <img src="https://ecdn.thelistacademy.com/wp-content/uploads/2021/02/Paschimottanasana-61291-pixahive-1024x683-1.jpg" title="Ebook" alt="Ebook"/>
+                        </div>
+                        <div class="overDiv">
+                            <div class="itemContentTitle">
+                                <h2>Paschimottanasana<br>It provides spine mobility and overall flexibility</h2>
+                            </div>
+                            <div class="itemContentInfo">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            </div>
+                            <div class="itemContentDownload">
+                                <a class="itemBtn" href="https://www.yogajournal.com/poses/seated-forward-bend/">View More!</a>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+            <!-- item 4 -->
+            <div class="item clearfix">
+              <div class="itemContent">
+                  <div class="itemContentItem">
+                      <img src="https://ecdn.thelistacademy.com/wp-content/uploads/2021/02/Triangle-Yoga-Pose-61102-pixahive-1024x683-1.jpg" title="Ebook" alt="Ebook"/>
+                  </div>
+                  <div class="overDiv">
+                      <div class="itemContentTitle">
+                          <h2>Trikonasana<br>It increases stability and reduces stress </h2>
+                      </div>
+                      <div class="itemContentInfo">
+                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                      </div>
+                      <div class="itemContentDownload">
+                          <a class="itemBtn" href="https://www.artofliving.org/yoga/yoga-poses/triangle-pose-trikonasana">View More!</a>
+                      </div>
+                  </div>
+              </div>
+            </div>  
+        </div>
+    </div>  
+      
+</body>
+</html>
