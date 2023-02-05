@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+     .header {
+    background-color:gray;
+  }
+  .nav {
+    margin-top: -10px;
+    margin-left:1275px;
+    /* float:right; */
+    padding: 18px 0;
+    width:500px;
+  }
+  .nav li {
+    display:inline;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+    text-transform:uppercase;
+    margin-left:10px;
+    margin-right:10px;
+  }
+  body{
+    background-color:rgb(64, 172, 199);
+    padding: 0px;
+    margin: 0px;
+  }
+
+/* * {
+  box-sizing: border-box;
+} */
+
+.bg-image {
+  /* The image used */
+ 
+
+  /* Add the blur effect */
+  filter: blur(3px);
+  -webkit-filter: blur(3px);
+
+  /* Full height */
+  height: 40%;
+  margin-top: -17px;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Position text in the middle of the page/image */
+.bg-text {
+  /* background-color: rgb(0,0,0); /* Fallback color */
+  /* background-color: rgba(0,0,0, 0.4); Black w/opacity/see-through */ 
+  color:wheat;
+  font-size: 47px;
+  font-weight: bold;
+  /* border: 3px solid #121010; */
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 107%;
+  padding: 25px;
+  text-align: center;
+}
+.mybox {
+	font-family: "Josefin Sans", sans-serif;
+	min-width: 400px;
+	width: 100%;
+	max-width: 1390px;
+	/* border: 0px solid #000; */
+	margin: 0 auto 15px;
+	text-align: center;
+	padding: 20px;
+	font-weight: bold;
+	/* border-radius: 10px; */
+	position: relative;
+}
+
+.warning {
+	background: rgb(242, 206, 116);
+	color: #20201d;
+	border-color: #2d2d2d;
+}
+
+.warning:before {
+	font-family: "Font Awesome 5 Free";
+	font-weight: 900;
+	content: "\f12a";
+	font-size: 2rem;
+	position: absolute;
+	left: 10px;
+	top: 10px;
+	text-shadow: 1px 1px 1px black;
+	transform: rotate(-5deg);
+}
+
+.info {
+	background: #58dbf2;
+	color: #2d2d2d;
+	border-color: #2d2d2d;
+}
+
+.info:before {
+	font-family: "Font Awesome 5 Free";
+	color: #58cef2;
+	font-weight: 900;
+	content: "\f129";
+	font-size: 2rem;
+	position: absolute;
+	left: 10px;
+	top: 10px;
+	text-shadow: 1px 2px 1px black;
+	transform: rotate(-5deg);
+}
+
+.success {
+	background: #b3eca9;
+	color: #306517;
+	border-color: #2d2d2d;
+}
+
+.success:before {
+	font-family: "Font Awesome 5 Free";
+	color: #306517;
+	font-weight: 900;
+	content: "\f00c";
+	font-size: 2rem;
+	position: absolute;
+	left: 10px;
+	top: 10px;
+	text-shadow: 1px 2px 1px black;
+	transform: rotate(-5deg);
+}
+
+.error {
+	background: #ebb1b1;
+	color: #973939;
+	border-color: #2d2d2d;
+}
+
+.error:before {
+	font-family: "Font Awesome 5 Free";
+	color: #973939;
+	font-weight: 900;
+	content: "\f00d";
+	font-size: 2rem;
+	position: absolute;
+	left: 10px;
+	top: 10px;
+	transform: rotate(-5deg);
+}
+
+.question {
+	background: lightgrey;
+	color: #2d2d2d;
+	border-color: #2d2d2d;
+}
+
+.question:before {
+	font-family: "Font Awesome 5 Free";
+	color: #2d2d2d;
+	font-weight: 900;
+	content: "\f128";
+	font-size: 2rem;
+	position: absolute;
+	left: 10px;
+	top: 10px;
+	transform: rotate(-5deg);
+}
+.new {
+margin-left: 30%;
+margin-right: 50%;
+}
+footer{
+  background: grey;
+  padding: 8px ;
+  text-align: center;
+  font-color: black;
+
+}
+
+
+
+</style>
+<body>
+    <div class="header">
+        <div class="container">
+          <ul class="nav">
+            <li><a href ="aboutus.html">About</a></li>
+            <li><a href="contactpage.html">Contact</a></li>
+                      <li><a href="thirdpage.html">Main</a></li>
+            <!-- <li>Team</li> -->
+            
+          </ul>
+        </div>
+      </div>
+      <div class="bg-image">
+        <img src="https://wallpaperaccess.com/full/534344.jpg" height=" 450px" width="1600px"/>
+      </div>
+
+      <div class="bg-text">
+        <h1>Tips and Tricks to master Meditation</h1>
+      </div>
+      <div class="container">
+        <div class="mybox warning">
+            <div class="mybox-content">
+                <p>
+                    Start early. Try to meditate first thing in the morning. That way you can be sure that it actually gets done and not bumped off the to-do list as the day gets more hectic.
+                </p>
+            </div>
+        </div>
+
+        <div class="mybox info">
+            <div class="mybox-content">
+                <p>
+                    Get comfortable with discomfort.Rather than trying to resist these emotions like  anxiety, restlessness, and irritation give them your full attention and allow them to come and go.
+                </p>
+            </div>
+        </div>
+
+        <div class="mybox success">
+            <div class="mybox-content">
+                <p>
+                    Watch your breath. “Even small time commitments—five, seven, 10 minutes a day—can bring significant results,” says Abbey. She suggests the following five-minute breathing exercise to help relax and focus the mind.
+                </p>
+            </div>
+        </div>
+
+        <div class="mybox error">
+            <div class="mybox-content">
+                <p>
+                    Go into your meditation practice without expectations.  Always think that each time you meditate, it is an opportunity to get to know your own mind better. 
+                </p>
+            </div>
+        </div>
+
+        <div class="mybox question">
+            <div class="mybox-content">
+                <p>
+                    Meditation can feel like a battle for focus and attention. You can make it easier on yourself by limiting distractions like uncomfortable clothing. 
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="mybox warning">
+            <div class="mybox-content">
+                <p>
+                    Take a couple of moments to wind down and clear your mind. Jumping right into meditation after an intense work meeting may not be best. It might be harder to sit still and calm your mind after these stressful moments. 
+                </p>
+            </div>
+        </div>
+
+        <div class="mybox info">
+            <div class="mybox-content">
+                <p>
+                    Allow thoughts to come and go. If you're a meditation beginner, failure to control your thoughts might make you feel like giving up. If that was the case, no one would keep up with their meditation practice. 
+                </p>
+            </div>
+        </div>
+
+        <div class="mybox success">
+            <div class="mybox-content">
+                <p>
+                    Add some music. Sitting in total silence isn't for everyone. If you prefer relaxing music to slip into a meditative state, go for it. In fact, some studies suggest that listening to music to relax can reduce stress levels. 
+                </p>
+            </div>
+        </div>
+
+        <div class="mybox error">
+            <div class="mybox-content">
+                <p>
+                    Use a personalized mantra. A mantra is a word, phrase, or syllable that you repeat during your meditation practice. You can say it out loud or silently in your mind.
+                </p>
+            </div>
+        </div>
+
+        <div class="mybox question">
+            <div class="mybox-content">
+                <p>
+                    Try guided meditation apps or take a class. If it's difficult for you to stick to a daily meditation practice on your own, you may want to try using an app or class for further accountability and guidance. 
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <script
+        src="https://kit.fontawesome.com/ce76befb67.js"
+        crossorigin="anonymous"
+    ></script>
+    <div class="new">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/CDnEKUDNwMM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</div>
+<footer>
+    <p><b>Free free to reach us.</b></p>
+  </footer>
+
+</body>
+</html>
