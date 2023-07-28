@@ -1,0 +1,185 @@
+.nav{
+    display:flex;
+    margin-top: -450px;
+    margin-left: 20px;
+    color: aliceblue;
+    font-size: 22px;
+    padding-right: 9px;
+    padding-left: 11px;
+    transform: scale(1.0);
+}
+.nav .navfirst{
+    margin-left: 60px;
+    margin-right: 1000px;
+}
+ .navsec{
+    font-family: open Sans,'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif,bold ;
+    font-size:80px;
+  text-align: center;
+  margin-top: -300px;
+  margin-left:810px;
+  color: aliceblue;
+}
+
+.Book{
+  font-family: serif, sans-serif, Arial Narrow Bold;
+  font-size: 45px;
+  color: aliceblue;
+  margin-top:-16px;
+  padding-left: 537px;
+  justify-content: center;
+  align-items: center; 
+}
+.search-container{
+  width:1240px;
+  background-color: aliceblue;
+ padding-left:670px;
+ padding-right:0px;
+  margin-left:590px;
+  margin-top: -100px;
+  padding-top:11px;
+  padding-bottom:15px;
+  font-size: 25px;
+  border-radius: 20px;
+}
+.search-container .inside{
+  margin-left:-650px;
+  margin-right:650px;
+  
+}
+pre{
+  margin-top: -30px;
+  margin-left:620px;
+  align-items: center;
+  justify-content: center;
+}
+.food{
+  font-size:45px;
+  margin-left:50px;
+  color: black;
+  margin-top:152px;
+}
+.foodimg1{
+  margin-left:50px;
+}
+.foodimg2{
+  margin-left:30px;
+  margin-top: 162px;
+}
+.foodimg3{
+  margin-left:30px;
+}
+.foodimg4{
+  margin-left:30px;
+}
+.new{
+  font-size:45px;
+  margin-left:50px;
+}
+.container{
+  display: flex;
+}
+.image-banner{
+  margin-left:100px;
+}
+.banner-description{
+  font-size: 25px;
+   font-weight: larger;
+   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+   margin-left: 0px;
+   margin-top: -27px;
+   background-color: rgb(246, 154, 33);
+   padding-right: 25px;
+   padding-left: 139px;
+}
+.image-banner2{
+  margin-left:80pxpx;
+  padding-left: 12px;
+}
+.banner-description2{
+  font-size: 25px;
+   font-weight: larger;
+   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+   margin-left: -14px;
+   margin-top: -27px;
+   background-color: rgb(246, 154, 33);
+   padding-right: 25px;
+   padding-left: 139px;
+}
+.image-banner3{
+  margin-left:80pxpx;
+  padding-left: 12px;
+}
+.banner-description3{
+  font-size: 25px;
+   font-weight: larger;
+   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+   margin-left: -14px;
+   margin-top: -27px;
+   background-color: rgb(246, 154, 33);
+   padding-right: 25px;
+   padding-left: 139px;
+}
+.image-banner4{
+  margin-left:80pxpx;
+  padding-left: 12px;
+}
+.banner-description4{
+  font-size: 25px;
+   font-weight: larger;
+   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+   margin-left: -14px;
+   margin-top: -27px;
+   background-color: rgb(246, 154, 33);
+   padding-right: 25px;
+   padding-left: 139px;
+}
+footer{
+  background-color: grey;
+  text-align: center;
+  display:flex;
+}
+.contact{
+  font-size:20px;
+  margin-left: 15px;
+  justify-content:center;
+  text-align:center;
+  margin-top: 8px;
+  font-weight: bolder;
+}
+.img{
+  margin-left:650px;
+}
+.link{
+  display: flex;
+  margin-left: 620px;
+  margin-top: 25px;
+ 
+}
+.link1{
+  
+  font-size: 30px;
+  padding-right:16px;
+ 
+}
+.link2{
+  padding-left:3px;
+  font-size: 30px;
+  padding-right:6px;
+  
+}
+.link3{
+  padding-left:7px;
+  font-size: 30px;
+  padding-right:5px;
+ 
+ 
+}
+.link4{
+  padding-right:5px;
+  padding-left: 5px;
+  font-size: 30px;
+  
+}
+
+
