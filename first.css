@@ -1,0 +1,138 @@
+body{
+    background-color: grey;
+}
+nav ul{
+    display:flex;
+    font-size: 30px;
+    list-style-type:none ;
+    background-color: black;
+    color: white;
+    font-style: normal;
+    height: 45px;
+    width: 100%;
+    padding: 10px;
+    text-align: right;
+    align-items:centre;
+}
+nav ul li{
+    padding:0px 10px;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.logo img{
+    height: 50px;
+    width: 50px;
+    padding-bottom: 7px;   
+}
+.logos{
+    font-weight: bolder;
+    color: aliceblue;
+    margin-top: 5px;
+}
+.text{
+    margin-left: 1350px;
+    display:flex;
+     font-weight: bolder;
+}
+.bottom{
+    height: 50px;
+    margin-top: 90px;
+    background-color: black;
+    flex-direction:column ;
+    margin-bottom:0px;
+
+}
+#myprogress{
+    width: 1960px;
+    margin-top:-15px;
+}
+.icon {
+    color:aliceblue;
+   justify-content: center;
+   text-align: center;
+   font-size: large;
+   display:flex;
+}
+.icon i{
+    cursor: pointer;
+}
+.icon .first{
+    padding-right: 5px;
+    
+}
+.icon .second{
+    padding-right: 10px;
+    padding-left: 10px;
+    
+}
+.icon .third{
+    padding-left:5px;
+   
+}
+.container{
+    background-color:black;
+    height:90vh;
+    width:80%;
+    display:flex;
+    margin-top: 100px;
+    margin-bottom: 20px;
+    align-items: center;
+    justify-content: center;
+    margin-left: 200px;
+    border-radius: 15px;
+    background-image: url("https://wallpapercave.com/wp/wp5126584.jpg");
+    
+}
+.songList{
+    font-size: 20px;
+    color:white;
+    margin-top: -550px ;
+    margin-left:-1100px;
+    padding: 50px;
+
+}
+.songList h1{
+    margin-left: 165px;
+    margin-top:520px;
+    position:relative;
+}
+
+.songItem{
+    color: black;
+    display:flex;
+    justify-content: space-between;
+    background-color: whitesmoke;
+    height:45px;
+    width:80%;
+    border-radius: 35px;
+    text-align: center;
+    margin-top: 22px;
+    padding:10px;
+    margin-left: 160px;
+
+
+}
+.songItem img{
+    height: 48px;
+    padding-left: 10px;
+    /* width: 50px;
+    margin-top: 40px; */
+    border-radius: 5px;
+}
+.songName{
+    font-weight: bolder;
+    /* padding-left: -20px; */
+    padding-right: 0px;
+    font-size: 45px;
+
+}
+.songtime{
+    font-weight: bolder;
+    /* padding-left: -50px; */
+    padding-right: 10px;
+    font-size: 35px;
+    padding-top: 4px;
+
+}

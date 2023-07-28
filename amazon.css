@@ -1,0 +1,617 @@
+body{
+    background-color: rgb(201, 223, 245);
+}
+nav{
+    background-color: rgb(168, 162, 162);
+    padding-top: 1px;
+height: 46px;
+width: 1538px;
+margin-left: -7px;
+margin-top: -10px;  
+display: flex;
+
+
+}
+nav img{
+   height: 103px;
+    margin-top: -25px;
+    margin-left: 1px;
+    width: 135px;
+}
+nav .first{
+    font-size: 12px;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+}
+nav .second{
+    padding-top: 15px;
+    padding-left: 7px;
+    height: 15px;
+}
+
+.search{
+    width: 398px;
+    padding-left: 35px;
+    padding-right: 72px;
+    padding-top: 5px;
+    padding-bottom: 0px;
+    font-size: 20px;
+    margin-top: 7px;
+    margin-bottom: 7px;
+    margin-left: 373px;
+    text-align: center;
+    border: none;
+      border-top-style: none;
+      border-right-style: none;
+      border-bottom-style: none;
+      border-left-style: none;
+    border-style: none;
+    display: inline;
+    margin-right: -24px;
+border-radius: 8px;
+}
+.search:hover{
+    border:2px solid black;
+}
+.search .text{
+    text-align: center;
+    margin-top: -1px;
+margin-right: 4px;
+position: sticky;
+}
+nav .icon{
+    background-color: rgb(5, 5, 5);
+padding-top: 7.8px;
+padding-bottom: 0.5px;
+padding-left: 5px;
+padding-right: 5px;
+margin-right: -539px;
+margin-top: 7px;
+margin-bottom: 6px;
+border-top-right-radius: 8px;
+border-bottom-right-radius: 8px;
+color: aliceblue;
+  }
+ .third{
+    padding-right: 2px;
+}
+.iconb{
+    margin-left: 918px;
+padding-top: 8px;
+font-size: 27px;
+}
+.iconb:hover{
+border:2px solid black;
+}
+.iconc{
+    margin-left: 53px;
+padding-top: 12px;
+font-size: 26px;
+}
+.iconc:hover{
+    border:2px solid black;
+    }
+.big{
+    background-color: rgb(85, 81, 81);
+    display:flex;
+font-size: 10px;
+color: white;
+margin-left: -9px;
+margin-right: -12px;
+padding-left: 10px;
+}
+.panel{
+   
+    padding-bottom: 5px;
+    font-size: 15px;
+    display: flex;
+padding-top: -7px;
+margin-top: 10px;
+}
+.panel12{
+    margin-top: -2px;
+margin-right: 100px;
+margin-left: 7px;
+font-size: 16px;
+margin-bottom: -1px;
+padding-top: 0px;
+}
+.panel2{
+    display: flex;
+font-size: 12px;
+margin-left: 18px;
+align-content: center;
+margin-right: 893px; 
+margin-top: -1px;   
+}
+.panel21{
+    padding-right: 5px;
+    padding-left: 10px;
+    font-size: 15px;
+  }
+  .panel21:hover{
+    color:yellow;
+  }
+  .panel22:hover{
+    color:yellow;
+  }
+  .panel23:hover{
+    color:yellow;
+  }
+
+  .panel22{
+    padding-right: 5px;
+    padding-left: 10px;
+    font-size: 15px;
+  }
+  .panel23{
+    padding-right: 5px;
+    padding-left: 10px;
+    font-size: 15px;
+  }
+
+.panel3{
+    display:flex;
+    font-size: 15px;
+    margin-left: -31px;
+    margin-top: -6px;
+}
+.panel3:hover{
+    color:yellow;
+  }
+.picture img{
+    margin-left: -20px;
+    background-image: cover;
+}
+.picture .words{
+    font-size: 20px;
+font-family: 'Times New Roman', Times, serif;
+
+color: #e9dcdc;
+margin-top: -32px;
+margin-left: 317px;
+}
+.picture .words a{
+    text-decoration: none;
+    color: #e9dcdc;
+    cursor: pointer;
+}
+.picture .words a:hover{
+    border:2px solid black;
+}
+.shopSection{
+    display:flex;
+}
+.shopSection .box1{
+    border: 2px solid black;
+    height: 300px;
+    width: 300px;
+    display: flex;
+    margin-top: 26px;
+    padding-top: 34px;
+    padding-bottom: 10px;
+    padding-right: 82px;
+    margin-right: 48px;
+    margin-left: 34px;
+    padding-left: 25px;
+    justify-content: space-evenly;
+    height:255px;
+    background-color: white;
+    border:3px solid black;
+  }
+
+.shopSection .box2{
+    border: 2px solid black;
+    height: 300px;
+    width: 300px;
+    display: flex;
+    margin-top: 26px;
+    padding-top: 34px;
+    padding-bottom: 10px;
+    padding-right: 82px;
+    margin-right: 48px;
+    margin-left: 34px;
+    padding-left: 25px;
+    justify-content: space-evenly;
+    height:255px;
+    background-color: white;
+    border:3px solid black;
+  }
+    
+.shopSection .box3{
+    border: 2px solid black;
+    height: 300px;
+    width: 300px;
+    display: flex;
+    margin-top: 26px;
+    padding-top: 34px;
+    padding-bottom: 10px;
+    padding-right: 82px;
+    margin-right: 48px;
+    margin-left: 34px;
+    padding-left: 25px;
+    justify-content: space-evenly;
+    height:255px;
+    background-color: white;
+    border:3px solid black;
+  }
+        
+
+ .shopSection .box4{
+    border: 2px solid black;
+    height: 300px;
+    width: 300px;
+    display: flex;
+    margin-top: 26px;
+    padding-top: 34px;
+    padding-bottom: 10px;
+    padding-right: 82px;
+    margin-right: 48px;
+    margin-left: 34px;
+    padding-left: 25px;
+    justify-content: space-evenly;
+    height:255px;
+    background-color: white;
+    border:3px solid black;
+  }
+  .shopSection2{
+    display:flex;
+    
+  }
+  .shopSection2 .box5{
+    border: 2px solid black;
+    height: 300px;
+    width: 300px;
+    display: flex;
+    margin-top: 26px;
+    padding-top: 34px;
+    padding-bottom: 10px;
+    padding-right: 82px;
+    margin-right: 48px;
+    margin-left: 34px;
+    padding-left: 25px;
+    justify-content: space-evenly;
+    height:255px;
+    background-color: white;
+    border:3px solid black;
+  }
+  .shopSection2 .box6{
+    border: 2px solid black;
+    height: 300px;
+    width: 300px;
+    display: flex;
+    margin-top: 26px;
+    padding-top: 34px;
+    padding-bottom: 10px;
+    padding-right: 82px;
+    margin-right: 48px;
+    margin-left: 34px;
+    padding-left: 25px;
+    justify-content: space-evenly;
+    height:255px;
+    background-color: white;
+    border:3px solid black;
+  }
+  .shopSection2 .box7{
+    border: 2px solid black;
+    height: 300px;
+    width: 300px;
+    display: flex;
+    margin-top: 26px;
+    padding-top: 34px;
+    padding-bottom: 10px;
+    padding-right: 82px;
+    margin-right: 48px;
+    margin-left: 34px;
+    padding-left: 25px;
+    justify-content: space-evenly;
+    height:255px;
+    background-color: white;
+    border:3px solid black;
+  }
+  .shopSection2 .box8{
+    border: 2px solid black;
+    height: 300px;
+    width: 300px;
+    display: flex;
+    margin-top: 26px;
+    padding-top: 34px;
+    padding-bottom: 10px;
+    padding-right: 82px;
+    margin-right: 48px;
+    margin-left: 34px;
+    padding-left: 25px;
+    justify-content: space-evenly;
+    height:255px;
+    background-color: white;
+    border:3px solid black;
+  }
+  .box1 h3{
+    font-weight: 600;
+    margin-left: -26px;
+    margin-top: -24px;
+    font-size: 21px;
+  }
+  .box2 h3{
+    font-weight: 600;
+    margin-left: -20px;
+    margin-top: -24px;
+    font-size: 21px;
+  }
+  .box3 h3{
+    font-weight: 600;
+    margin-left: -20px;
+    margin-top: -24px;
+    font-size: 21px;
+  }
+  .box4 h3{
+    font-weight: 600;
+    margin-left: -20px;
+    margin-top: -24px;
+    font-size: 21px;
+  }
+  .box5 h3{
+    font-weight: 600;
+    margin-left: -20px;
+    margin-top: -24px;
+    font-size: 21px;
+  }
+  .box6 h3{
+    font-weight: 600;
+    margin-left: -20px;
+    margin-top: -24px;
+    font-size: 21px;
+  }
+  .box7 h3{
+    font-weight: 600;
+    margin-left: -20px;
+    margin-top: -24px;
+    font-size: 21px;
+  }
+  .box8 h3{
+    font-weight: 600;
+    margin-left: -20px;
+    margin-top: -24px;
+    font-size: 21px;
+  }
+.box1 img{
+    padding-top: 108px;
+    padding-left: 12px;
+    padding-right: 2px;
+    padding-bottom: -26px;
+    margin-top: -99px;
+    margin-left: -65px;
+    margin-right: -50px;
+}
+.box2 img{
+    padding-top: 108px;
+    padding-left: 12px;
+    padding-right: 2px;
+    padding-bottom: -26px;
+    margin-top: -99px;
+    margin-left: -105px;
+    margin-right: -45px;
+}
+.box3 img{
+    padding-top: 108px;
+    padding-left: 12px;
+    padding-right: 2px;
+    padding-bottom: -26px;
+    margin-top: -99px;
+    margin-left: -67px;
+    margin-right: -45px;
+}
+.box4 img{
+    padding-top: 108px;
+    padding-left: 12px;
+    padding-right: 2px;
+    padding-bottom: -26px;
+    margin-top: -99px;
+    margin-left: -67px;
+    margin-right: -45px;
+}
+.box5 img{
+    padding-top: 108px;
+    padding-left: 12px;
+    padding-right: 2px;
+    padding-bottom: -26px;
+    margin-top: -99px;
+    margin-left: -67px;
+    margin-right: -50px;
+}
+.box6 img{
+    padding-top: 108px;
+    padding-left: 12px;
+    padding-right: 2px;
+    padding-bottom: -26px;
+    margin-top: -99px;
+    margin-left: -65px;
+    margin-right: -50px;
+}
+.box7 img{
+    padding-top: 108px;
+    padding-left: 12px;
+    padding-right: 2px;
+    padding-bottom: -26px;
+    margin-top: -99px;
+    margin-left: -65px;
+    margin-right: -50px;
+}
+.box8 img{
+    padding-top: 108px;
+    padding-left: 12px;
+    padding-right: 2px;
+    padding-bottom: -26px;
+    margin-top: -99px;
+    margin-left: -65px;
+    margin-right: -50px;
+}
+.box1 pre{
+    margin-top: 229px;
+    margin-left: -314px;
+    padding-left: 9px;
+    margin-right: -9px;
+    font-weight: bolder;
+}
+.box2 pre{
+    margin-top: 229px;
+    margin-left: -314px;
+    padding-left: 9px;
+    margin-right: -9px;
+    font-weight: bolder;
+
+}
+.box3 pre{
+    margin-top: 229px;
+    margin-left: -314px;
+    padding-left: 9px;
+    margin-right: -9px;
+    font-weight: bolder;
+
+}
+.box4 pre{
+    margin-top: 229px;
+    margin-left: -314px;
+    padding-left: 9px;
+    margin-right: -9px;
+    font-weight: bolder;
+
+}
+.box5 pre{
+    margin-top: 229px;
+    margin-left: -314px;
+    padding-left: 9px;
+    margin-right: -9px;
+    font-weight: bolder;
+
+}
+.box6 pre{
+    margin-top: 229px;
+    margin-left: -314px;
+    padding-left: 9px;
+    margin-right: -9px;
+    font-weight: bolder;
+
+}
+.box7 pre{
+    margin-top: 229px;
+    margin-left: -314px;
+    padding-left: 9px;
+    margin-right: -9px;
+    font-weight: bolder;
+
+}
+.box8 pre{
+    margin-top: 229px;
+    margin-left: -314px;
+    padding-left: 9px;
+    margin-right: -9px;
+    font-weight: bolder;
+
+}
+.box1 pre:hover{
+    color: rgb(246, 44, 44);
+    
+}
+.box2 pre:hover{
+    color: rgb(246, 44, 44);
+    
+}
+.box3 pre:hover{
+    color: rgb(246, 44, 44);
+    
+}
+.box4 pre:hover{
+    color: rgb(246, 44, 44);
+    
+}
+.box5 pre:hover{
+    color: rgb(246, 44, 44);
+    
+}
+.box6 pre:hover{
+    color: rgb(246, 44, 44);
+    
+}
+.box7 pre:hover{
+    color: rgb(246, 44, 44);
+    
+}
+.box8 pre:hover{
+    color: rgb(246, 44, 44);
+    
+}
+.last p{
+    padding-left: 636px;
+margin-left: -3px;
+font-weight: bold;
+}
+.last button{
+    background-color: rgb(242, 238, 4);
+font-weight: 600;
+margin-left: 708px;
+border-radius: 7px;
+padding-left: 26px;
+padding-right: 33px;
+padding-top: 5px;
+padding-bottom: 6px;
+cursor: pointer;
+}
+.foot1{
+    margin-left: -10px;
+margin-top: 13px;
+color: white;
+font-weight: bold;
+background-color: gray;
+padding-left: 735px;
+padding-right: 31px;
+padding-top: 25px;
+padding-bottom: 22px;
+}
+.foot2{
+    background-color: rgb(77, 75, 75);
+    color:white;
+    margin-top: -16px;
+margin-left: -8px;
+display: flex;
+padding-top: 50px;
+padding-left: 62px;
+font-size: 21px;
+padding-bottom: 50px;
+
+    
+}
+.foot21 ul{
+   list-style-type: none;
+   padding-right: 229px;
+   margin-left: 46px;
+ }
+
+.foot22 ul{
+    list-style-type: none;
+    padding-left:43px;
+padding-right: 262px;
+    }
+.foot23 ul{
+    list-style-type: none
+     }
+            
+     .foot3{
+        display:flex;
+        margin-left: -10px;
+    margin-top: 0px;
+    color: white;
+    font-weight: bold;
+    background-color: gray;
+    padding-left: 735px;
+    padding-right: 31px;
+    padding-top: 25px;
+    padding-bottom: 22px;
+    font-size: 20px;
+    }
+    .foot3 .link{
+        padding-left: 14px;
+        padding-right:14px;
+        
+    }
+
